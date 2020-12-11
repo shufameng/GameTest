@@ -17,15 +17,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    gametestwindow.cpp
+    gametestwindow.cpp \
+    sfmwidget_test.cpp
 
 HEADERS += \
-    gametestwindow.h
+    gametestwindow.h \
+    sfmwidget_test.h
 
 FORMS += \
-    gametestwindow.ui
+    gametestwindow.ui \
+    sfmwidget_test.ui
 
 include($$PWD/sfm_game/sfm_game.pri)
+include($$PWD/white_board/white_board.pri)
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
